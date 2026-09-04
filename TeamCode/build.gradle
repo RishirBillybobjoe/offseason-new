@@ -1,15 +1,4 @@
-//
-// build.gradle in TeamCode
-//
-// Most of the definitions for building your module reside in a common, shared
-// file 'build.common.gradle'. Being factored in this way makes it easier to
-// integrate updates to the FTC into your code. If you really need to customize
-// the build definitions, you can place those customizations in this file, but
-// please think carefully as to whether such customizations are really necessary
-// before doing so.
-
-
-// Custom definitions may go here
+apply plugin: 'com.android.library'
 
 // Include common definitions from above.
 apply from: '../build.common.gradle'
@@ -37,6 +26,6 @@ dependencies {
     implementation 'dev.nextftc:bindings:1.0.1'
     implementation 'dev.nextftc.extensions:pedro:1.0.0'
 
-    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.core:core-ktx:1.19.0'
     implementation 'com.acmerobotics.dashboard:dashboard:0.5.0'
 }
